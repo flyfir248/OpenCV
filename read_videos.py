@@ -12,4 +12,4 @@ while True:
         break
 
 capture.release()   # release the capture and destroy the windows
-cv.destroyAllWindows()
+cv.destroyAllWindows()   
