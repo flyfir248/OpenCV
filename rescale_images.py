@@ -3,8 +3,15 @@ import cv2 as cv
 #img = cv.imread("Images/Cat_white.jpg")
 #cv.imshow("Cat_brown",img) # good for small images...
 
+# change the resolution
+def changeRes(width,height):
+    # works only for live video
+    capture.set(3,width)   # ref the width
+    capture.set(4,width)   # ref the height
+
 ## resize and rescale
 def rescale(frame,scale=0.75):
+    # works for videos,images and live video
     width= int(frame.shape[1]*scale)    # sets the width
     height= int(frame.shape[0]*scale)    # sets the height
 
